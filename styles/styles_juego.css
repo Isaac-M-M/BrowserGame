@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* FUENTES */
+
+@font-face {
+    font-family: "happyFont";
+    src: url(../fonts/ShadowsIntoLight-Regular.ttf);
+}
+html{
+    font-size: 14px;
+    
+}
+
+body{
+    font-family: "happyFont";
+    /* background-color: rgb(230, 196, 218); */
+    background-image: url(../svg/fondo.svg);
+}
+h1{
+    text-align: center;
+    font-size: 3em;
+}
+#contenedor{
+    display: flex;
+    margin: 0 auto;
+    justify-content: left;
+    width: 80%;
+    height: 800px;
+    background-color:rgb(230, 196, 218) ;
+}
+
+
+#pregunta{
+
+    
+}
+#respuesta{
+
+
+}

@@ -11,7 +11,8 @@
 }
 body{
     font-family: "happyFont";
-    background-color: rgb(230, 196, 218);
+    /* background-color: rgb(230, 196, 218); */
+    background-image: url(../svg/fondo.svg);
 }
 
 h1{
