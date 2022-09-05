@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* FUENTES */
+
+@font-face {
+    font-family: "happyFont";
+    src: url(../fonts/ShadowsIntoLight-Regular.ttf);
+}
+body{
+    font-family: "happyFont";
+    background-color: rgb(230, 196, 218);
+}
+
+h1{
+    text-align: center;
+    font-size: 65px;
+}
+h2{
+    text-align: center;
+}
+
+#contenedor_imagen{
+    background-image: url(../img/inicio.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 30%;
+    height: 600px;
+    border: 3px solid #444;
+    border-radius: 300px;
+    box-shadow: 2px 2px 10px gray;
+    display: none;
+}
+#contenedor_imagen a{
+   display: block;
+   width: 100%;
+   height: 100%;
+}
+
+#contenedor_imagen:hover{
+    background-image: url(../img/inicio2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#contenedor_boton1{
+    text-align: center;
+    
+}
+#contenedor_boton2{
+    text-align: center;
+    display: none;
+}
+
+.btn{
+    margin-top: 30px;
+    width: 200px;
+    height: 100px;
+    border-radius: 75px;
+    cursor: pointer;
+    transition: all 300ms;
+    font-family: "happyFont";
+    background-color: blueviolet;
+    box-shadow: 2px 2px 10px gray;
+}
+
+.btn:hover{
+scale: 1.3;
+box-shadow: 2px 2px 10px #444, 0px 2px 5px #444, 0px 3px 5px #444;
+
+}
+
+.btn p{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 900;
+    font-size: 25px;
+    
+}

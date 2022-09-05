@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Juego</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="jquery/jquery-1.12.4.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $("#empezar").click(function(){
+                $("#contenedor_imagen").fadeIn(1000);
+                $("#empezar").fadeOut(1000);
+                $("#ahora_si").fadeIn();
+            });
+            
+
+        })
+
+    </script>
+
+</head>
+<body>
+    <h1>Bienvenida a este nuevo juego</h1>
+    <h2>por tu 33 cumpleaños...</h2>
+
+    
+    <div id="contenedor_imagen">
+        <a href="pages/juego.html" id="enlace_imagen"></a>
+    </div>
+    
+    <div id="contenedor_boton1">
+    <button class="btn" id="empezar"><p>Empezar</p></button>
+    </div>  
+
+    <div id="contenedor_boton2">
+        <button class="btn" id="ahora_si"><a href="juego.html" >Ahora si</a></button>
+        </div>  
+</body>
+</html>
