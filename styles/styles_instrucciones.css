@@ -23,7 +23,7 @@ body{
 
 h1{
     text-align: center;
-    font-size: 60px;
+    font-size: 4.3em;
 }
 
 #instrucciones{
@@ -64,3 +64,19 @@ strong{
     font-size: 1.3em;
 }
 
+
+@media (max-width: 600px) {
+    *{
+        padding: 0px;
+    }
+
+    h1{
+        font-size: 1em;
+    }
+
+    #instrucciones{
+        width: 98%;
+        font-size: .9em;
+        letter-spacing: 0;
+    }
+}
