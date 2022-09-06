@@ -10,14 +10,20 @@
     <script src="../jquery/jquery-1.12.4.js"></script>
     <script>
         $(document).ready(function(){
+           $("#contenedor_acierto").hide();
+
+           $("#respuesta3").click(function(){
+            $("#contenedor_acierto").fadeIn(1000);
+           })
+                
+            })
 
 
 
 
 
 
-
-        })
+       
         
     </script>
 
@@ -48,9 +54,13 @@
                  </div>
             </div>       
                     <div id="contenedor_acierto">
-                        <p id="acierto"> <i class="fa-duotone fa-cupcake"></i>Acertaste!!!! pasas a la siguiente fase!</p>
-                        <div id="btn" class="button"><a href="#">Siguiente</a></div>
+                        <div id="contenedor_alerta">
+                        <p id="acierto"> <i class="fa-duotone fa-cupcake"></i>Fácil, ¿eh?. Pasas a la siguiente fase!</p>
+                        <div id="btn" class="button"><a href="juego2.html">
+                             <img src="../svg/flecha_siguiente.svg">
+                        </a></div>
                      </div>
+                    </div>
     </div>
 </body>
 </html>
