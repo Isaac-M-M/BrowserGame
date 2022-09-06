@@ -32,18 +32,19 @@ h2{
     justify-content: center;
     align-items: center;
     width: 80%;
-    min-height: 800px;
-    height: fit-content;
+    min-height: fit-content;
+    height: 800px;
     background-color:rgb(230, 196, 218) ;
     box-shadow: 1px 3px 10px rgb(117, 90, 117);
     margin-bottom: 50px;
+    flex-direction: column;
 }
 
 #contenedor_juego{
     display: flex;
     width: 90%;
-    min-height: 600px;
-    height: fit-content;
+    min-height: fit-content;
+    height: 600px;
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
@@ -53,6 +54,10 @@ h2{
     
     width: 70%;
     height: fit-content;
+}
+
+.caja_pregunta p{
+    text-align: center;
 }
 
 .caja_pregunta .pregunta{
@@ -77,6 +82,7 @@ h2{
     
     width:40%;
     height: 40px;
+    min-height: fit-content;
     background-color: purple;
     box-shadow: 3px 3px 10px #444, 0px 4px 5px #444;
     color: white;
@@ -152,17 +158,93 @@ h2{
     stroke: blue;
 }
 
+
+/* JUEGO IMAGENES */
+
+
+#contenedor_imagenes{
+    width: 90%;
+    min-height: fit-content;
+    height: 700px;
+    margin-top: 40px; 
+    margin-right: 10px;
+    margin-bottom: 10px;   
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0px 0px 10px #444 inset;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.imagen_prueba{
+    width: 40%;
+    height: 40%;
+    cursor: pointer;
+    overflow: hidden;
+    
+    
+}
+
+.imagen_prueba a{
+    width: 100%;
+    height: 100%;
+}
+
+.imagen_prueba:hover{
+    scale: 2;
+    margin: 0 auto;
+    
+}
+
+#imagen1 img{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(94, 174, 113);
+
+}
+
+#imagen2 img{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(95, 117, 149);
+}
+#imagen3 img{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(126, 139, 64);
+}
+#imagen4 img{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(49, 36, 48);
+}
+
+
+/* MEDIA QUERIES */
+
 @media (max-width:500px) {
 
     #contenedor{
         width: 95%;
+        height: fit-content;
         font-size: 10px;
     }
     #contenedor_juego{
+        height: fit-content;
         width: 95%;
     }
    
     .caja_respuesta{
         width: 90%;
+    }
+
+
+    .imagen_prueba{
+        width: 100%;
+        flex-grow: 1;
+        margin-bottom: 10px;
     }
 }
