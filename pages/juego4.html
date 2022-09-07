@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/styles_juego3.css">
+    <script src="https://kit.fontawesome.com/374de499b9.js" crossorigin="anonymous"></script>
+    <script src="../jquery/jquery-1.12.4.js"></script>
+    <script>
+        $(document).ready(function () {
+
+$("#contenedorAcierto").hide();
+
+            var texto = document.getElementById("texto");
+            var boton = document.getElementById("submit");
+            var contenedor = document.getElementById("contenedorAcierto");
+            
+            boton.addEventListener("click", test, false);
+            
+
+        })
+
+        function test() {
+            if (texto.value == "infinito") {
+                //alert("buenaaa");
+                $("#contenedorAcierto").css("display","block");
+                
+            }else{
+                alert("sigue probando");
+            }
+            event.preventDefault();
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+
+    <h1>Juego 4</h1>
+
+    <div id="contenedor">
+
+        <p>Aquí va la siguiente.. <br>
+
+        </p>
+        <h2><i class="fa-regular fa-heart"></i> ¿Cuánto te quiere tu gordito? <i class="fa-regular fa-heart"></i></h2>
+        
+        <div id="form">
+
+        <form>
+
+            <input type="text" class="input" id="texto" autocomplete="off">
+
+            <button type="submit" class="input" id="submit">Validar</button>
+
+        </form>
+<p id="pAbajo">Un, dos, tres, responde otra vez!</p>
+    </div>
+    </div>
+
+
+    <div id="contenedorAcierto">
+        <div id="contenedor_alerta" class="ca_j3">
+
+            <p>Bieeeeen! parece que has acertado. Te voy a dar a elegir:</p>
+            <div id="cont_img">
+            <a href="juego5.html"><i class="fa fa-gift"></i></a>
+            <a href="https://www.youtube.com/watch?v=HEW9E0R1yn8"> <i class="fa fa-circle-question"></i></a>
+             </div>
+         </div>
+
+    </div>
+
+</body>
+
+</html>

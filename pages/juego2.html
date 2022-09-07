@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,42 +8,74 @@
     <title>Document</title>
     <link rel="stylesheet" href="../styles/styles_juego.css">
     <script src="../jquery/jquery-1.12.4.js"></script>
-    <style>
-        .fa-duotone{
-            width: 15px;
-            height: 15px;
-        }
-    </style>
+    <script src="https://kit.fontawesome.com/374de499b9.js" crossorigin="anonymous"></script>
+
     <script>
-        
+        $(document).ready(function () {
+            $("#contenedor_acierto").hide();
+
+            $("#imagen4").click(function () {
+                $("#contenedor_acierto").fadeIn(1000);
+          
+            })
+
+            $("#imagen1").click(function(){
+                alert("Esta no es. Piénsalo bien");
+            })
+            $("#imagen2").click(function(){
+                alert("Va a ser que no");
+            })
+            $("#imagen3").click(function(){
+                alert("Sorry....NO");
+            })
+        })
 
     </script>
 </head>
+
 <body>
     <h1>Juego 2</h1>
-    <h2>Siguiente prueba. Fíjate bien en las imagenes......</h2>
-   <div id="contenedor">
-        <div class="caja_pregunta"><p class="pregunta">¿Qué foto es de XX/XX/XXXX?</p></div>
+    <h2>Siguiente prueba. Fíjate bien en las imagenes y haz memoria....</h2>
+    <div id="contenedor">
+        <div class="caja_pregunta">
+            <p class="pregunta">¿Qué foto es del 30/03/2021? Piensa, piensa...</p>
+        </div>
         <div id="contenedor_imagenes">
 
-            
+
             <div id="imagen1" class="imagen_prueba">
-                <a href="https://google.es"><img src=""></a>
+                <a href=""><img src="../img/juego2/juego2-1.jpeg"></a>
             </div>
-            
+
             <div id="imagen2" class="imagen_prueba">
-                <a href=""><img src=""></a>
+                <a href=""><img src="../img/juego2/juego2-2.jpeg"></a>
             </div>
-            
+
             <div id="imagen3" class="imagen_prueba">
-                <a href=""><img src=""></a>
+                <a href=""><img src="../img/juego2/juego2-3.jpeg" ></a>
             </div>
-            
+
             <div id="imagen4" class="imagen_prueba">
-                <a href=""><img src=""></a>
+                <img src="../img/juego2/juego2-4.jpeg">
             </div>
         </div>
 
-   </div>
+    </div>
+
+    <div id="contenedor_acierto">
+        <div id="contenedor_alerta">
+            <p id="acierto"> </i>Muy bien!!! Has ganado una </p>
+            <div id="btn" class="button">
+                <a href="../pages/juego3.html">
+                    <i class="fa-solid fa-cake-candles"></i>
+                    <p>Cógela!!</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
 </body>
+
 </html>

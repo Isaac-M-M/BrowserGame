@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/styles_juego3.css">
+    <script src="../jquery/jquery-1.12.4.js"></script>
+    <script>
+        $(document).ready(function(){
+           $("#contenedor_acierto").hide();
+
+           $("#respuesta2").click(function(){
+            $("#contenedor_acierto").fadeIn(1000);
+           })
+                
+            })
+    
+    </script>
+</head>
+<body>
+    <h1>Juego 3</h1>
+    
+
+    <div id="contenedor">
+
+<p>Bien, bien... Parece que vas avanzando adecuadamente. En esta prueba vas a tener que resolver la siguiente cuestión.</p>
+<h2>Que se le da mejor a tu gordi....</h2>
+<div id="contenedor_respuestas">
+
+    <div id="respuesta1" class="caja_respuesta">
+        <p class="respuesta">Cantar</p>
+    </div>
+    <div id="respuesta2" class="caja_respuesta">
+        <p class="respuesta">Todas son correctas</p>
+    </div>
+    <div id="respuesta3" class="caja_respuesta">
+        <p class="respuesta">Bailar</p>
+    </div>
+    <div id="respuesta4" class="caja_respuesta">
+        <p class="respuesta">Hacer el tonto</p>
+    </div>
+</div>
+
+
+    </div>
+
+
+    <div id="contenedor_acierto">
+        <div id="contenedor_alerta">
+        <a href="juego4.html"><video src="../vid/baile2.mp4" autoplay loop width="30%" height="600px" > </video></a>
+        <p>YIIIIIIJAAAAAAAAAA!!!</p>
+        </div>
+     </div>
+    </div>
+</body>
+</html>

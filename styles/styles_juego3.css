@@ -1,6 +1,6 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 /* FUENTES */
@@ -27,47 +27,23 @@ h2{
     text-align: center;
 }
 #contenedor{
-    display: flex;
     margin: 0 auto;
-    justify-content: center;
-    align-items: center;
+    padding: 15px;
     width: 80%;
     min-height: fit-content;
     height: 800px;
     background-color:rgb(230, 196, 218) ;
     box-shadow: 1px 3px 10px rgb(117, 90, 117);
     margin-bottom: 50px;
-    flex-direction: column;
-}
+    font-size: 2em;
 
-#contenedor_juego{
-    display: flex;
-    width: 90%;
-    min-height: fit-content;
-    height: 600px;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-.caja_pregunta{
-    
-    width: 70%;
-    height: fit-content;
-}
-
-.caja_pregunta p{
-    text-align: center;
-}
-
-.caja_pregunta .pregunta{
-    font-size: 3em;
 }
 
 #contenedor_respuestas{
     width: 90%;
     min-height: 400px;
     height: fit-content;
+    margin: 0 auto;
     margin-top: 40px;    
     background-color: rgb(238, 238, 238);
     box-shadow: 0px 0px 10px #444 inset;
@@ -104,15 +80,21 @@ h2{
     scale: 1.2;
 }
 
-.caja_respuesta .respuesta{
-    margin-top: 9px;
-    font-weight: 900;
-}
+/* ACIERTO */
 
-
-    /*ACIERTO*/
 
 #contenedor_acierto{
+    position: absolute;
+    top: 0;
+    width: 95%;
+    height: 95vh;
+    margin-left:2%;
+    margin-top: 1vh;
+    background-color: rgba(230, 196, 218, .8);
+    box-shadow: 0, 0, 10px, black;
+}
+
+#contenedorAcierto{
     position: absolute;
     top: 0;
     width: 95%;
@@ -130,7 +112,7 @@ h2{
     min-height:20vh ;
     height: fit-content;
     margin: 0 auto;
-    margin-top: 20%;
+    margin-top: 5vh;
     color: white;
     font-size: 40px;
     border-radius: 20px;
@@ -138,123 +120,130 @@ h2{
     box-shadow: 3px, 0px, 10px, #444;
 }
 
+
+/* JUEGO 4 */
+
+#form{
+    width: 100%;
+    height: 100px;
+    display: block;
+    margin-top: 15px;
+}
+
+#form form{
+    text-align: center;
+}
+
+.input{
+    height: 3em;
+    border-radius: 10px;
+    font-family: inherit;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+#texto{
+    padding-left: 5px;
+}
+
+button{
+    background-color: purple;
+    color: white;
+    width: max-content;
+    padding: 5px;
+}
+button:hover{
+    scale: 1.2;
+    box-shadow: 0px 3px 10px #444;
+}
+
+
+#pAbajo{
+    text-align: center;
+    margin-top: 5px;
+}
 #contenedor_alerta a{
     text-decoration: none;
     color: white;
-    transform: all 300ms;
-    
+
 }
 
-
-
-#contenedor_alerta img{
-    margin-top: 10px;
-    width: 50px;
-    height: 50px;
-    fill: white;
+.fa-gift{
+    color: white;
+    stroke: black;
+    stroke-width: 15px;
+    scale: 1.3;
 }
 
-#contenedor_alerta img:hover{
-    scale:1.2;
+.fa-gift:hover{
+    scale: 1.5;
 }
 
+.fa-circle-question{
+    color: black;
+    stroke: white;
+    stroke-width: 15px;
+    scale: 1.3;
+}
+.fa-circle-question:hover{
+    scale:1.5;
+}
 
-/* JUEGO IMAGENES */
-
-
-#contenedor_imagenes{
-    width: 90%;
-    min-height: fit-content;
-    height: 700px;
-    margin-top: 40px; 
-    margin-right: 10px;
-    margin-bottom: 10px;   
-    background-color: rgb(238, 238, 238);
-    box-shadow: 0px 0px 10px #444 inset;
-
+#cont_img{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    align-items: center;
-
 }
 
-.imagen_prueba{
-    width: 40%;
-    height: 40%;
-    cursor: pointer;
-    overflow: hidden;
-    
-    
-}
-
-.imagen_prueba a{
-    width: 100%;
-    height: 100%;
+.fa-heart{
+   margin: 0;
 }
 
 
-
-#imagen1 img{
-    width: 100%;
-    height: 100%;
-    background-color: rgb(94, 174, 113);
-
-}
-
-#imagen2 img{
-    width: 100%;
-    height: 100%;
-    background-color: rgb(95, 117, 149);
-}
-#imagen3 img{
-    width: 100%;
-    height: 100%;
-    background-color: rgb(126, 139, 64);
-}
-#imagen4 img{
-    width: 100%;
-    height: 100%;
-    background-color: rgb(49, 36, 48);
-}
-
-.fa-cake-candles{
-    color: white;
-    scale: 1.3;
-    stroke: black;
-    stroke-width: 13px;
-}
-
-.fa-cake-candles:hover{
-   
-    scale: 1.5;
-
-}
 
 /* MEDIA QUERIES */
 
 @media (max-width:500px) {
 
     #contenedor{
-        width: 95%;
-        height: max-content;
+        width: 90%;
+        height: 900px;
+        min-height: max-content;
         font-size: 10px;
     }
     #contenedor_juego{
-        height: max-content;
+        height: fit-content;
         width: 95%;
     }
-#contenedor_imagenes{
-    height: max-content;
-    width: 95%;
-}
    
-
+    .caja_respuesta{
+        width: 90%;
+    }
 
 
     .imagen_prueba{
         width: 100%;
         flex-grow: 1;
         margin-bottom: 10px;
+    }
+
+    #contenedor_acierto, #contenedorAcierto{
+        padding: 0;
+        margin: 0;
+        min-height: fit-content;
+    }
+
+    #contenedor_alerta{
+        padding: 15px;
+        margin-top: 5px;
+        /* width: max-content; */
+        height: max-content;
+    }
+
+    #contenedor_acierto video{
+        width: 100%;
+        height: 300px;
+        min-height: auto;
+
     }
 }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery/jquery-1.12.4.js"></script>
+    <script>
+
+        $(document).ready(function(){
+
+
+        
+
+    var texto = document.getElementById("texto");
+    var boton = document.getElementById("submit");
+
+    boton.addEventListener ("click", test, false );
+
+})
+
+    function test(){
+        if (texto.value == "2"){
+            alert("buenaaa");
+        }
+    }
+
+
+
+    </script>
+</head>
+<body>
+
+    <form >
+
+        <input type="text" id="texto" placeholder="escribe...">
+        <input type="submit" id="submit">
+
+    </form>
+    
+</body>
+</html>
