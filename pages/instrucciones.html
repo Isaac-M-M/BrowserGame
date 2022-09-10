@@ -6,8 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../styles/styles_instrucciones.css">
+    <script src="../jquery/jquery-1.12.4.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#principal").hide();
+            $("#principal").fadeIn(3000);
+
+
+        })
+           
+
+            
+
+    </script>
 </head>
 <body>
+    <section id="principal">
     <h1>Bienvenida de nuevo</h1>
     <div id="instrucciones">
     <p>Otro año más, he preparado un juego interactivo para tu cumpleaños.
@@ -23,8 +37,8 @@
         En caso contrario y sin más dilación, puedes pulsar empezar. SUERTE!
 
     </p>
-    <button class="btn"><a href="juego.html">Empezar!</a></button>
+    <button class="btn btn_instrucciones"><a href="juego.html">Empezar!</a></button>
 </div>
-
+</section>
 </body>
 </html>

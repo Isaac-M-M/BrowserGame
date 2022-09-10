@@ -9,6 +9,10 @@
     <script src="../jquery/jquery-1.12.4.js"></script>
     <script>
         $(document).ready(function(){
+
+            $("#principal").hide();
+
+            $("#principal").toggle(3000);
            $("#contenedor_acierto").hide();
 
            $("#respuesta2").click(function(){
@@ -20,6 +24,7 @@
     </script>
 </head>
 <body>
+    <section id="principal">
     <h1>Juego 3</h1>
     
 
@@ -54,5 +59,6 @@
         </div>
      </div>
     </div>
+</section>
 </body>
 </html>

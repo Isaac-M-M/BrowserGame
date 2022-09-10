@@ -13,7 +13,7 @@
 
             $("#empezar").click(function(){
                 $("#contenedor_imagen").fadeIn(1000);
-                $("#empezar").fadeOut(1000);
+                $("#contenedor_boton1").fadeOut(1000);
                 $("#ahora_si").fadeIn();
             });
             
@@ -24,20 +24,22 @@
 
 </head>
 <body>
-    <h1>Bienvenida a este nuevo juego</h1>
-    <h2>por tu 33 cumpleaños...</h2>
+    <header>
+    <h1>Bienvenida a este nuevo juego <br>por tu <span>33</span> cumpleaños...</h1>
+    </header>
 
     
     <div id="contenedor_imagen">
         <a href="pages/instrucciones.html" id="enlace_imagen"></a>
     </div>
     
-    <div id="contenedor_boton1">
+    <div id="contenedor_boton1" class="animate_button">
     <button class="btn" id="empezar"><p>Empezar</p></button>
     </div>  
-
     <!-- <div id="contenedor_boton2">
         <button class="btn" id="ahora_si"><a href="instruccione" >Ahora si</a></button>
         </div>   -->
+        
+        
 </body>
 </html>

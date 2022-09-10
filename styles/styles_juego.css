@@ -231,6 +231,20 @@ h2{
 
 }
 
+#btn1{
+    animation: buton 1s alternate infinite;
+}
+
+
+@keyframes buton{
+    from{
+        
+        transform: scale(1.2) rotate(-15deg);
+    }
+    to{
+        transform: rotate(5deg);
+    }
+}
 /* MEDIA QUERIES */
 
 @media (max-width:500px) {

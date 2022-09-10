@@ -64,6 +64,18 @@ strong{
     font-size: 1.3em;
 }
 
+.btn_instrucciones{
+    animation: boton .5s infinite alternate;
+}
+
+@keyframes boton {
+    from{
+        scale: 1.2;
+    }
+    to{
+        scale: 1.3;
+    }
+}
 
 @media (max-width: 600px) {
     *{

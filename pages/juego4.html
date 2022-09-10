@@ -12,14 +12,20 @@
     <script>
         $(document).ready(function () {
 
-$("#contenedorAcierto").hide();
+            $("#contenedorAcierto").hide();
+            $("#principal").hide();
 
+            $("#principal").toggle(3000);
             var texto = document.getElementById("texto");
             var boton = document.getElementById("submit");
             var contenedor = document.getElementById("contenedorAcierto");
             
             boton.addEventListener("click", test, false);
             
+            $("#susto").click(function(){
+                url = $(this).attr("href")
+                window.open(url,"ventana juego", "width=300px height=200px");
+            })
 
         })
 
@@ -40,6 +46,7 @@ $("#contenedorAcierto").hide();
 </head>
 
 <body>
+    <section id="principal">
 
     <h1>Juego 4</h1>
 
@@ -70,12 +77,13 @@ $("#contenedorAcierto").hide();
             <p>Bieeeeen! parece que has acertado. Te voy a dar a elegir:</p>
             <div id="cont_img">
             <a href="juego5.html"><i class="fa fa-gift"></i></a>
-            <a href="https://www.youtube.com/watch?v=HEW9E0R1yn8"> <i class="fa fa-circle-question"></i></a>
+             <a href="javascript:"<i id="susto" class="fa fa-circle-question"></i>
+        
              </div>
          </div>
 
     </div>
-
+</section>
 </body>
 
 </html>

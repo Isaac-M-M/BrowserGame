@@ -10,6 +10,10 @@
     <script src="../jquery/jquery-1.12.4.js"></script>
     <script>
         $(document).ready(function(){
+            $("#principal").hide();
+            $("#principal").fadeIn(3000);
+
+
            $("#contenedor_acierto").hide();
 
            $("#respuesta3").click(function(){
@@ -22,6 +26,7 @@
 
 </head>
 <body>
+    <section id="principal">
     <h1>Juego 1</h1>
     <h2>Este juego va a ser sencillito. Solo tienes que responder a la siguiente pregunta:</h2>
     <div id="contenedor">
@@ -49,11 +54,12 @@
                     <div id="contenedor_acierto">
                         <div id="contenedor_alerta">
                         <p id="acierto"></i>Fácil, ¿eh?. Pasas a la siguiente fase!</p>
-                        <div id="btn" class="button"><a href="juego2.html">
+                        <div id="btn1" class="button"><a href="juego2.html">
                              <img src="../svg/flecha_siguiente.svg">
                         </a></div>
                      </div>
                     </div>
     </div>
+
 </body>
 </html>

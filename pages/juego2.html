@@ -12,21 +12,28 @@
 
     <script>
         $(document).ready(function () {
+
+            $("#principal").hide();
+            $("#principal").fadeIn(3000);
+
             $("#contenedor_acierto").hide();
 
-            $("#imagen4").click(function () {
+            $("#imagen4").click("touch",function () {
                 $("#contenedor_acierto").fadeIn(1000);
-          
+               
             })
 
             $("#imagen1").click(function(){
                 alert("Esta no es. Piénsalo bien");
+                event.preventDefault();
             })
             $("#imagen2").click(function(){
                 alert("Va a ser que no");
+                event.preventDefault();
             })
             $("#imagen3").click(function(){
                 alert("Sorry....NO");
+                event.preventDefault();
             })
         })
 
@@ -34,6 +41,7 @@
 </head>
 
 <body>
+    <section id="principal">
     <h1>Juego 2</h1>
     <h2>Siguiente prueba. Fíjate bien en las imagenes y haz memoria....</h2>
     <div id="contenedor">
@@ -65,7 +73,7 @@
     <div id="contenedor_acierto">
         <div id="contenedor_alerta">
             <p id="acierto"> </i>Muy bien!!! Has ganado una </p>
-            <div id="btn" class="button">
+            <div id="btn2" class="button">
                 <a href="../pages/juego3.html">
                     <i class="fa-solid fa-cake-candles"></i>
                     <p>Cógela!!</p>
@@ -75,7 +83,7 @@
     </div>
 
 
-
+</section>
 </body>
 
 </html>
