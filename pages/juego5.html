@@ -32,10 +32,20 @@
 
                 
                 //cuando hago click en la foto se desplega el css
-
-                $("#carta1").on("touchstart",function(){
+                
+                var carta1 = document.getElementById("carta1");
+                if (carta1(e) == "touchstart"){
+                    $("#carta1").on("touchstart",function(){
                    $("#carta1 #redonda").css("width","200px");
                 })
+                }
+                else if (carta1(e) =="touchend") {
+                    $("#carta1").on("touchstart",function(){
+                   $("#carta1 #redonda").css("width","0px");
+                })
+                }
+                // $("#carta1").on("touchstart",function(){
+                //    $("#carta1 #redonda").css("width","200px");
 
             
         })
