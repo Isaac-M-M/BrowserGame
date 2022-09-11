@@ -157,5 +157,23 @@ header span{
 @media (max-width:800px){
     #contenedor_imagen{
         width: 90%;
+        animation: cara 1s infinite alternate;
     }
+
+
+@keyframes cara {
+    from{
+        background-image: url(../img/inicio.jpeg);
+        background-position: center;
+    }
+    to{
+        background-image: url(../img/inicio2.jpeg);
+        background-position: center;
+    }
+    
 }
+
+
+
+}
+

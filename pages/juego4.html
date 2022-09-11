@@ -12,30 +12,34 @@
     <script>
         $(document).ready(function () {
 
-            $("#contenedorAcierto").hide();
-            $("#principal").hide();
 
-            $("#principal").toggle(3000);
+             $("#contenedorAcierto").hide();
+            $("#principal").hide();
+            $("#iframes").hide();
+
+
+            function alerta() {
+                $("#iframe").fadeIn(500);
+            }
+            $("#principal").fadeIn(3000);
             var texto = document.getElementById("texto");
             var boton = document.getElementById("submit");
             var contenedor = document.getElementById("contenedorAcierto");
-            
+            var susto = document.getElementById("susto");
+
             boton.addEventListener("click", test, false);
-            
-            $("#susto").click(function(){
-                url = $(this).attr("href")
-                window.open(url,"ventana juego", "width=300px height=200px");
-            })
 
         })
 
+
+
         function test() {
-            if (texto.value == "infinito") {
-                //alert("buenaaa");
-                $("#contenedorAcierto").css("display","block");
-                
-            }else{
-                alert("sigue probando");
+            if (texto.value == "infinito" || texto.value == "Infinito" || texto.value == "INFINITO") {
+
+                $("#contenedorAcierto").css("display", "block");
+
+            } else {
+                alert("NO, NO! más! mucho más!");
             }
             event.preventDefault();
         }
@@ -48,42 +52,49 @@
 <body>
     <section id="principal">
 
-    <h1>Juego 4</h1>
+        <h1>Juego 4</h1>
 
-    <div id="contenedor">
+        <div id="contenedor">
 
-        <p>Aquí va la siguiente.. <br>
+            <p>Aquí va la siguiente.. <br>
 
-        </p>
-        <h2><i class="fa-regular fa-heart"></i> ¿Cuánto te quiere tu gordito? <i class="fa-regular fa-heart"></i></h2>
-        
-        <div id="form">
+            </p>
+            <h2><i class="fa-regular fa-heart"></i> ¿Cuánto te quiere tu gordito? <i class="fa-regular fa-heart"></i>
+            </h2>
 
-        <form>
+            <div id="form">
 
-            <input type="text" class="input" id="texto" autocomplete="off">
+                <form>
 
-            <button type="submit" class="input" id="submit">Validar</button>
+                    <input  type="text" class="input" id="texto" autocomplete="off">
 
-        </form>
-<p id="pAbajo">Un, dos, tres, responde otra vez!</p>
-    </div>
-    </div>
+                    <button type="submit" class="input" id="submit">Validar</button>
+
+                </form>
+                <p id="pAbajo">Un, dos, tres, responde otra vez!</p>
+            </div>
+        </div>
 
 
-    <div id="contenedorAcierto">
-        <div id="contenedor_alerta" class="ca_j3">
+        <div id="contenedorAcierto">
+            <div id="contenedor_alerta" class="ca_j3">
 
-            <p>Bieeeeen! parece que has acertado. Te voy a dar a elegir:</p>
-            <div id="cont_img">
-            <a href="juego5.html"><i class="fa fa-gift"></i></a>
-             <a href="javascript:"<i id="susto" class="fa fa-circle-question"></i>
-        
-             </div>
-         </div>
+                <p>Bieeeeen! Pues no será que tengo la novia más lista del mundo?<br>Elige:</p>
+                <div id="cont_img">
+                    <a href="juego5.html"><i id="regalo" class="fa fa-gift"></i></a>
+                    <a href="javascript: alerta()"><i id="susto" class="fa fa-circle-question"></i></a>
 
-    </div>
-</section>
+                </div>
+            </div>
+            <iframe id="iframes" width="100%" height="315" src="https://www.youtube.com/embed/HEW9E0R1yn8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+
+        </div>
+    </section>
 </body>
+<script>
+
+</script>
 
 </html>

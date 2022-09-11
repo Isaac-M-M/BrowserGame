@@ -12,11 +12,12 @@
 
             $("#principal").hide();
 
-            $("#principal").toggle(3000);
+            $("#principal").fadeIn(3000);
            $("#contenedor_acierto").hide();
 
            $("#respuesta2").click(function(){
             $("#contenedor_acierto").fadeIn(1000);
+            document.body.scrollIntoView();
            })
                 
             })

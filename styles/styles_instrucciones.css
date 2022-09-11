@@ -83,13 +83,22 @@ strong{
     }
 
     h1{
-        font-size: 1em;
+        font-size: 2em;
     }
 
     #instrucciones{
         width: 98%;
-        height: 100vh;
+        height: max-content;
         font-size: 20px;
         letter-spacing: 0;
+    }
+
+    .btn{
+        font-size: 10px;
+        margin-left: 35%;
+        margin-top: 5px;
+        width: min-content;
+        height: 50px;
+        padding: 10px;
     }
 }

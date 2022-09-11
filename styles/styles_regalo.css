@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* FUENTES */
+
+@font-face {
+    font-family: "happyFont";
+    src: url(../fonts/ShadowsIntoLight-Regular.ttf);
+}
+html{
+    font-size: 14px;
+    
+}
+
+body{
+    font-family: "happyFont";
+    /* background-color: rgb(230, 196, 218); */
+    background-image: url(../svg/fondo.svg);
+}
+#caja{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+    
+}
+#ticket{
+    width: 40%;
+    height: 50vh;
+    background-color: white;
+    border: 1px solid black;
+    margin: 0 auto;
+    box-shadow: 4px 4px 10px #444;
+    transform: rotateX(-45deg) rotateY(30deg);
+}
+
+#fondoConfeti :nth-child(1){
+    position: absolute;
+    display:block;
+    top: -20px;
+    width: 2vh;
+    height: 2vh;
+    margin-left: 30%;
+    border-radius: 50%;
+    background-color: red;
+    animation:aa infinite 5s linear;
+   animation-delay: 2000ms;
+}
+@keyframes aa {
+    from{
+            top: -40px;
+            
+    }
+    50%{
+        margin-left: 35%;
+    }
+    to{
+        top: 98%;
+        
+    }
+    
+}
+
+#fondoConfeti :nth-child(2){
+    position: absolute;
+    top: -10px;
+    width: 2vh;
+    height: 2vh;
+    margin-left: 10%;
+    border-radius: 50%;
+    background-color: blue;
+    animation:confeti infinite 5s linear;
+    animation-delay: 500ms;
+}
+
+@keyframes confeti{
+    from{
+            top: -20px;
+
+    }
+    65%{
+        scale:2;
+    }
+    to{
+        top: 98%;
+
+    }
+    
+}
+
+#fondoConfeti :nth-child(3){
+    position: absolute;
+    display:block;
+    top: -20px;
+    width: 2vh;
+    height: 2vh;
+    margin-left: 15%;
+    border-radius: 50%;
+    background-color: rgb(62, 169, 147);
+    animation:confeti3 infinite 3s linear;
+    animation-delay: 500ms;
+}
+@keyframes confeti3 {
+    from{
+            top: -20px;
+
+    }
+    75%{
+        scale:3;
+    }
+    to{
+        top: 98%;
+
+    }
+    
+}
+
+#fondoConfeti :nth-child(4){
+    position: absolute;
+    display:block;
+    top: -20px;
+    width: 2vh;
+    height: 2vh;
+    margin-left: 25%;
+    border-radius: 50%;
+    background-color: rgb(82, 144, 28);
+    animation:confeti4 infinite 3s linear;
+    animation-delay: 200ms;
+}
+@keyframes confeti4 {
+    from{
+            top: -20px;
+            margin-left: 23%;
+    }
+    10%{
+        scale:3;
+    }
+    to{
+        top: 98%;
+
+    }
+    
+}
+
+#fondoConfeti :nth-child(5){
+    position: absolute;
+    display:block;
+    top: -20px;
+    width: 2vh;
+    height: 2vh;
+    margin-left: 90%;
+    border-radius: 50%;
+    background-color: rgb(208, 247, 101);
+    animation:confeti5 infinite 3s linear;
+    animation-delay: 1000ms;
+}
+@keyframes confeti5 {
+    from{
+            top: -20px;
+            margin-left: 95%;
+    }
+    55%{
+        scale:2;
+    }
+    to{
+        top: 98%;
+
+    }
+    
+}
+#fondoConfeti :nth-child(6){
+    position: absolute;
+    display:block;
+    top: -20px;
+    width: 2vh;
+    height: 2vh;
+    margin-left: 80%;
+    border-radius: 50%;
+    background-color: rgb(232, 173, 26);
+    animation:confeti6 infinite 3s linear;
+    animation-delay: 500ms;
+}
+@keyframes confeti6 {
+    from{
+            top: -20px;
+            margin-left: 75%;
+    }
+    15%{
+        scale:2;
+    }
+    to{
+        top: 98%;
+
+    }
+    
+}
+#fondoConfeti :nth-child(7){
+    position: absolute;
+    display:block;
+    top: -20px;
+    width: 2vh;
+    height: 2vh;
+    margin-left: 70%;
+    border-radius: 50%;
+    background-color: rgb(14, 84, 50);
+    animation:confeti7 infinite 4s linear;
+    animation-delay: 500ms;
+}
+@keyframes confeti7 {
+    from{
+            top: -20px;
+            margin-left: 75%;
+    }
+    35%{
+        scale:2;
+    }
+    to{
+        top: 98%;
+
+    }
+    
+}
+
+#fondoConfeti :nth-child(8){
+    position: absolute;
+    display:block;
+    top: -20px;
+    width: 2vh;
+    height: 2vh;
+    margin-left: 67%;
+    border-radius: 50%;
+    background-color: rgb(101, 9, 97);
+    animation:confeti8 infinite 5s linear;
+    animation-delay: 800ms;
+}
+@keyframes confeti8 {
+    from{
+            top: -20px;
+            margin-left: 72%;
+    }
+    80%{
+        scale:3;
+    }
+    to{
+        top: 98%;
+
+    }
+    
+}
+
+#fondoConfeti :nth-child(9){
+    position: absolute;
+    display:block;
+    top: -20px;
+    width: 2vh;
+    height: 2vh;
+    margin-left: 50%;
+    border-radius: 50%;
+    background-color: rgb(168, 230, 251);
+    animation:confeti9 infinite 5s linear;
+    animation-delay: 100ms;
+}
+@keyframes confeti9 {
+    from{
+            top: -20px;
+            margin-left: 45%;
+    }
+    15%{
+        scale:2;
+    }
+    to{
+        top: 98%;
+
+    }
+    
+}
+
+#fondoConfeti :nth-child(10){
+    position: absolute;
+    display:block;
+    top: -20px;
+    width: 2vh;
+    height: 2vh;
+    margin-left: 50%;
+    border-radius: 50%;
+    background-color: rgb(150, 83, 83);
+    animation:confeti10 infinite 4s linear;
+    animation-delay: 750ms;
+}
+@keyframes confeti10 {
+    from{
+            top: -20px;
+            margin-left: 60%;
+    }
+    45%{
+        scale:2;
+    }
+    to{
+        top: 98%;
+
+    }
+    
+}
+
+#fondoConfeti :nth-child(11){
+    position: absolute;
+    display:block;
+    top: -20px;
+    width: 2vh;
+    height: 2vh;
+    margin-left: 40%;
+    border-radius: 50%;
+    background-color: rgb(109, 119, 68);
+    animation:confeti11 infinite 3s linear;
+    animation-delay: 1000ms;
+}
+@keyframes confeti11 {
+    from{
+            top: -20px;
+            margin-left: 30%;
+    }
+75%{
+    scale:3;
+}
+    to{
+        top: 98%;
+
+    }
+    
+}
+
+#fondoConfeti :nth-child(12){
+    position: absolute;
+    display:block;
+    top: -20px;
+    width: 2vh;
+    height: 2vh;
+    margin-left: 70%;
+    border-radius: 50%;
+    background-color: rgb(232, 98, 26);
+    animation:confeti12 infinite 5s linear;
+    animation-delay: 350ms;
+}
+@keyframes confeti12 {
+    from{
+            top: -20px;
+            margin-left: 80%;
+    }
+50%{
+    scale:2;
+}
+    to{
+        top: 98%;
+
+    }
+    
+}
+
+#fondoConfeti :nth-child(13){
+    position: absolute;
+    display:block;
+    top: -20px;
+    width: 2vh;
+    height: 2vh;
+    margin-left: 35%;
+    border-radius: 50%;
+    background-color: rgb(0, 255, 60);
+    animation:confeti13 infinite 2s linear;
+    animation-delay: 800ms;
+}
+@keyframes confeti13 {
+    from{
+            top: -20px;
+            margin-left: 20%;
+    }
+
+    to{
+        top: 98%;
+
+    }
+    
+}

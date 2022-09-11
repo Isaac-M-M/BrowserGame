@@ -1,28 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../styles/styles_juego3.css">
+    <link rel="stylesheet" href="../styles/styles_juego5.css">
     <script src="https://kit.fontawesome.com/374de499b9.js" crossorigin="anonymous"></script>
     <script src="../jquery/jquery-1.12.4.js"></script>
     <script>
+        $(document).ready(function(){
 
+            $("#contenedor").hide();
+            $("#contenedor").fadeIn(2000);
+
+            var boton = document.getElementById("botonOrden");
+            var texto = document.getElementById("orden")
+
+            boton.addEventListener("click", function(){
+
+                if(texto.value == "4132" || texto.value == "4 1 3 2" || texto.value == "4,1,3,2" || texto.value == "4, 1, 3, 2"){
+                    window.open("fin.html", "_self");
+
+
+                }else{
+                    alert("Sigue probando!");
+                }
+
+            })
+
+                
+                //cuando hago click en la foto se desplega el css
+
+                $("#carta1").on("touchstart",function(){
+                   $("#carta1 #redonda").css("width","200px");
+                })
+
+            
+        })
 
 
     </script>
 </head>
+
 <body>
 
     <h1>Juego 5</h1>
 
     <div id="contenedor">
 
-        <p>Demasiado fácil sería si ya hubiésemos acabado ¿no?</p>
+        <p>Demasiado fácil sería si ya hubiésemos acabado ¿no?
+            El siguiente juego consiste en ordenar los hechos.<br>
+            En este caso consiste en como organizo mis mañanas antes de ir a trabajar.
+            Pasa el ratón por encima de la foto e introduce los número en orden
+
+        </p>
+
+
+        <div id="contenedorCartas">
+            <div id="carta1" class="carta">
+                <div id="redonda"></div>
+                <div id="texto">
+                    <p>1. ME PONGO LOS CASCOS</p>
+                </div>
+            </div>
+            <div id="carta2" class="carta">
+                <div id="redonda"></div>
+                <div id="texto">
+                    <p>2. PREPARO LA BOLSA DE TUPPERS</p>
+                </div>
+            </div>
+            <div id="carta3" class="carta">
+                <div id="redonda"></div>
+                <div id="texto">
+                    <p>3. HAGO LAS TOSTADAS</p>
+                </div>
+            </div>
+            <div id="carta4" class="carta">
+                <div id="redonda"></div>
+                <div id="texto">
+                    <p>4. ME DUCHO</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="respuestaOrden">
+            <input id="orden" type="text" placeholder="Introduce los números en orden">
+            <button id="botonOrden">Validar</button>
+        </div>
 
     </div>
-    
+
+
+
 </body>
+
 </html>

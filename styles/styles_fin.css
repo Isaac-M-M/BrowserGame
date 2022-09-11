@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* FUENTES */
+
+@font-face {
+    font-family: "happyFont";
+    src: url(../fonts/ShadowsIntoLight-Regular.ttf);
+}
+html{
+    font-size: 14px;
+    
+}
+
+body{
+    font-family: "happyFont";
+    /* background-color: rgb(230, 196, 218); */
+    background-image: url(../svg/fondo.svg);
+}
+h1{
+    text-align: center;
+    font-size: 3em;
+}
+h2{
+    text-align: center;
+}
+#contenedor{
+    margin: 0 auto;
+    padding: 15px;
+    width: 80%;
+    min-height: fit-content;
+    height: max-content;
+    background-color:rgb(230, 196, 218) ;
+    box-shadow: 1px 3px 10px rgb(117, 90, 117);
+    margin-bottom: 50px;
+    font-size: 2em;
+
+}
+
+.contenedorFin{
+    margin-top: 6%;
+}
+
+#recibir_regalo{
+    width: max-content;
+    height: 10vh;
+    padding: 1vh;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);    
+    margin: 0 auto;
+    border-radius: 10px;
+    animation: sombra infinite alternate .5s;
+    cursor: pointer;
+    
+}
+
+#recibir_regalo p{
+    text-align: center;
+    line-height: 10vh;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+@keyframes sombra {
+    from{
+        box-shadow: 2px 2px 10px #444;
+    }
+    to{
+        box-shadow: 8px 8px 10px #444;
+        scale: 1.1;
+    }
+    
+}
