@@ -33,20 +33,14 @@
                 
                 //cuando hago click en la foto se desplega el css
                 
-                var carta1 = document.getElementById("carta1");
-                if (carta1(e) == "touchstart"){
-                    $("#carta1").on("touchstart",function(){
-                   $("#carta1 #redonda").css("width","200px");
-                })
-                }
-                else if (carta1(e) =="touchend") {
-                    $("#carta1").on("touchstart",function(){
-                   $("#carta1 #redonda").css("width","0px");
-                })
-                }
-                // $("#carta1").on("touchstart",function(){
-                //    $("#carta1 #redonda").css("width","200px");
+                
+                
+                     $("#carta1").on("touchstart",function(){
+                    $("#carta1 #redonda").css("width","200px");
+                },"touchend",function(){
+                    $("#carta1 #redonda").css("width","0px");
 
+                })
             
         })
 
