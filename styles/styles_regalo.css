@@ -9,15 +9,13 @@
     font-family: "happyFont";
     src: url(../fonts/ShadowsIntoLight-Regular.ttf);
 }
-html{
-    font-size: 14px;
-    
-}
+
 
 body{
     font-family: "happyFont";
     /* background-color: rgb(230, 196, 218); */
     background-image: url(../svg/fondo.svg);
+    font-size: 24px;
 }
 #caja{
     position: relative;
@@ -29,13 +27,52 @@ body{
     
 }
 #ticket{
-    width: 40%;
-    height: 50vh;
+    width: 50%;
+    height: 60vh;
     background-color: white;
     border: 1px solid black;
     margin: 0 auto;
     box-shadow: 4px 4px 10px #444;
     transform: rotateX(-45deg) rotateY(30deg);
+    padding: 1em;
+    
+
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#texto{
+    width: 100%;
+
+}
+
+#imagen{
+    background-image: url("https://www.turismodearagon.com/wp-content/uploads/2018/10/A%C3%B1isclo-1.jpg");
+    background-size: cover;
+    width: 50%;
+    height: 50%;
+
+}
+
+#imagen2{
+    background-image: url("https://www.campings.net/fotos/campings/D55EDjT0VwhO/8Hr8f8jCtnh9dWfUpR3JvWGTV25KqZBw.JPG") ;
+    background-size: cover;
+    width: 30%;
+    height: 40%;
+    
+}
+
+#descripcion{
+   
+    width: 30%;
+
+}
+
+#descripcion2{
+    width: 50%;
+    
 }
 
 #fondoConfeti :nth-child(1){
@@ -384,3 +421,4 @@ body{
     }
     
 }
+
